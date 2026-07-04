@@ -70,7 +70,7 @@ deeppierce
 
 **禁止提前收工** — `task_done` 调用时检查 pending 数，不为 0 拒绝结束，强制 Agent 继续测试。
 
-![alt text](image-1.png)
+
 
 ### 4. 测试清单
 
